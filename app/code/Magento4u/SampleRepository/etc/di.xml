@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento4u\SampleRepository\Api\Data\StudentInterface" type="Magento4u\SampleRepository\Model\Student" />
+    <preference for="Magento4u\SampleRepository\Api\Data\StudentSearchResultInterface" type="Magento4u\SampleRepository\Model\StudentSearchResult" />
+    <preference for="Magento4u\SampleRepository\Api\StudentRepositoryInterface" type="Magento4u\SampleRepository\Model\StudentRepository" />
+</config>
