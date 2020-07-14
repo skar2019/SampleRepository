@@ -116,6 +116,10 @@ class StudentRepository implements StudentRepositoryInterface
         $searchResults->setSearchCriteria($searchCriteria);
         $searchResults->setItems($collection->getItems());
 
+        echo "</br>";
+        echo $collection->getSelect()->__toString();
+        echo "</br>";
+
         return $searchResults;
     }
 }

@@ -4,6 +4,8 @@ namespace Magento4u\SampleRepository\Api\Data;
 
 use Magento\Framework\Api\ExtensibleDataInterface;
 
+use Magento\Framework\Api\CustomAttributesDataInterface;
+
 /**
  * Interface StudentInterface
  * @author Suman Kar(suman.jis@gmail.com)
@@ -48,12 +50,12 @@ interface StudentInterface extends ExtensibleDataInterface
     public function setRollNumber($rollNumber);
 
     /**
-     * @return Magento4u\SampleRepository\Api\Data\StudentExtensionInterface
+     * @return \Magento4u\SampleRepository\Api\Data\StudentExtensionInterface
      */
     public function getExtensionAttributes();
 
     /**
-     * @param Magento4u\SampleRepository\Api\Data\StudentExtensionInterface $extensionAttributes
+     * @param \Magento4u\SampleRepository\Api\Data\StudentExtensionInterface $extensionAttributes
      * @return mixed
      */
     public function setExtensionAttributes(StudentExtensionInterface $extensionAttributes);
